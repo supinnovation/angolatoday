@@ -1,0 +1,10 @@
+.area {
+  opacity: 0;
+  animation: animate 0.5s forwards;
+}
+
+@keyframes animate {
+  to{
+    opacity: 1;
+  }
+}

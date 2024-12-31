@@ -1,0 +1,30 @@
+.area {
+  position: relative;
+}
+
+.legend {
+  border-bottom: 2px solid var(--color-secondary);
+
+}
+.legend span{
+  font-size: 15px;
+  padding: 3px 26px;
+  padding-right: 16px;
+  position: relative;
+  letter-spacing: -1px;
+  top: 1px;
+}
+
+.legend span::after {
+  content: "";
+  display: block;
+  border-width: 23px 0px 0px 20px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border-color: transparent transparent transparent transparent;
+  border-left-color: inherit;
+
+  
+}

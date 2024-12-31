@@ -1,0 +1,7 @@
+.topmenu {
+
+  position: sticky;
+  top: -85px;
+  z-index: 1000;
+  background: var(--color-primary);
+}

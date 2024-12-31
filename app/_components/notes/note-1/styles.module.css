@@ -1,0 +1,36 @@
+
+
+.area {
+  color: var(--text-color-paragraphy);
+  max-width: 100%;
+  font-weight: 100;
+  }
+  .legend {
+    letter-spacing: var(--space-letter);
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  .legend span:first-child{
+    color: var(--text-color-menu)
+  }
+  .putafter::after {
+    content: '';
+    width: 100px;
+    max-width: 100px;
+    height: 3px;
+    background-color: var(--color-secondary);
+    display: block;
+    left: 0;
+    
+    margin: 20px 0px
+  }
+
+  .descript{
+    display: -webkit-box; /* Define um contêiner flexível */
+    -webkit-box-orient: vertical; /* Orienta o texto verticalmente */
+    -webkit-line-clamp: 5; /* Limita o texto a 3 linhas */
+    overflow: hidden; /* Oculta o texto que excede o contêiner */
+    flex: 1 1 100%;
+  }
+

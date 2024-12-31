@@ -1,0 +1,29 @@
+.gridtop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+.area {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.area > div > div {
+  border-right: var(--border);
+  padding: 32px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.area > div > div:last-child {
+  border: none;
+  padding-right: 0;
+}
+.area > div > div:first-child {
+  padding-left: 0;
+}
+.area > div:last-child {
+  border-top: var(--border);
+  padding-top: 32px;
+}

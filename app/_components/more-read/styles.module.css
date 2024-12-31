@@ -1,0 +1,12 @@
+.area {
+  border-top: 4px solid var(--color-secondary);
+}
+
+.area > div > div {
+  border-right: var(--border);
+  
+}
+
+.area > div > div:last-child {
+  border: none;
+}

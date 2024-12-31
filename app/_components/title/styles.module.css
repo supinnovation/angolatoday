@@ -1,0 +1,12 @@
+.area{
+  line-height: var(--space-title-line-height);
+  letter-spacing: -1px;
+  color: var(--text-color-primary);
+}
+
+.area_limited {
+  display: -webkit-box; /* Define um contêiner flexível */
+  -webkit-box-orient: vertical; /* Orienta o texto verticalmente */
+  -webkit-line-clamp: 4; /* Limita o texto a 3 linhas */
+  overflow: hidden; /* Oculta o texto que excede o contêiner */
+}

@@ -1,0 +1,22 @@
+.left > div{
+  border-bottom: var(--border);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.left > div:last-child{
+  border: none;
+}
+
+.area > div:first-child{
+  border-right: var(--border);
+}
+
+
+.right > div {
+  border-bottom: var(--border);
+}
+
+.right > div:last-child{
+  border: none;
+}

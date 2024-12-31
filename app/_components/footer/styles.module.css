@@ -1,0 +1,13 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 36px;
+  padding-bottom: 30px;
+  border-bottom: 10px dashed #222;
+  margin-bottom: 30px;
+
+}
+
+.grid > div:first-child {
+  grid-column: 1/3;
+}
