@@ -30,13 +30,20 @@
     --color-line-2: #111;
   }
 } */
-
+body, html {
+  height: 100dvh;
+}
 body {
   color: var(--text-color-paragraphy);
   background: var(--color-primary);
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
 }
-
+footer {
+  
+  bottom: 0px;
+}
 h1 {
   font-size: 38px;
   font-weight: 700;

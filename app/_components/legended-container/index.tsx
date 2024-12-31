@@ -16,15 +16,14 @@ export default function LegendContainer({
         borderColor: legendColor
       }}>
       <span 
-      style={{
-        borderColor: legendColor
-      }}
+        style={{
+          borderColor: legendColor,
+          backgroundColor: legendColor
+        }}
       className={`
           text-[var(--text-color-secondary)]
-          bg-[${legendColor}]
-          
           ${fontTitle3.className}
-        `}>{legend}</span>
+        `} >{legend}</span>
       </div>
       <div className={classArea}>
         {children}

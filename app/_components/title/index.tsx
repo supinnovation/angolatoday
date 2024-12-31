@@ -13,9 +13,10 @@ export default function Title({
       <h1 className={`
         text-[38px]
         ${styles.area}
-        ${className}
+       
         ${fontHeader.className}
         ${limited && styles.area_limited}
+         ${className}
       `} style={style}>
         {children}
       </h1>

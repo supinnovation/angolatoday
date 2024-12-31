@@ -34,16 +34,23 @@ export default function CardGroup2(){
             legends={['Negócios']}
             image={home_photos[0].image}
             title={home_photos[0].title}
+            href={home_photos[0].href}
+
             
           />
            <CardModelSimple
             legends={['Tecnologia']}
             image={home_photos[2].image}
             title={home_photos[2].title}
+            href={home_photos[2].href}
             
           />
         </div>
-        <CardModel1 title={home_photos[1].sub} />
+        <CardModel1 title={home_photos[1].sub} 
+          image={home_photos[1].image}
+          href={home_photos[1].href}
+
+        />
       </LegendedContainer>
       <LegendedContainer legend={"Legenda 2"} className={`
           flex-[1]
@@ -62,18 +69,22 @@ export default function CardGroup2(){
         <CardModelHorizontal 
           image={home_photos[1].image}
           title={home_photos[1].title}
+          href={home_photos[1].href}
         />
          <CardModelHorizontal 
           image={home_photos[0].image}
           title={home_photos[0].title}
+          href={home_photos[0].href}
         />
          <CardModelHorizontal 
           image={home_photos[2].image}
           title={home_photos[2].title}
+          href={home_photos[2].href}
         />
          <CardModelHorizontal 
           image={home_photos[0].image}
           title={home_photos[1].title}
+          href={home_photos[1].href}
         />
       </LegendedContainer>
     </MainContainer>

@@ -18,6 +18,8 @@ export default function ModelHomeTop(){
               Angola, tem impactado 
               positivamente todos os sectores, incluindo o sector minério`}
             description={`Novas politíticas têm sido aplicadas para acompanhar o desenvolvimento do potencial tecnologico de diversas empresas angolanas, de diferentes sectores`}
+            image={home_photos[0].image}
+            href={home_photos[0].href}
           />
       </div>
       <div className={styles.spand + `
@@ -27,11 +29,14 @@ export default function ModelHomeTop(){
           image={home_photos[1].image}
           title={home_photos[1].title}
           legends={["Legenda 1", "Mais outra"]}
+          href={home_photos[1].href}
+          
         />
          <CardModelSimple 
           image={home_photos[2].image}
           title={home_photos[2].title}
           legends={["Mais outra"]}
+          href={home_photos[2].href}
         />
       </div>
       <div className={styles.spand+` 

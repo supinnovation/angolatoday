@@ -23,14 +23,14 @@ export default function Note1(
 }
 
 export const DateLabel = ({
-  className
-} : {className?:string}) => {
+  className, postcolor
+} : {className?:string, postcolor?:string}) => {
 
   return(
     <div className={`${fontMenuSoft.className} ${styles.legend} ${className}`} style={{
       fontSize: '10px'
     }}>
-        <span>Publicado |</span>🌍<span>25 de Dezembro de 2024</span>
+        <span style={!postcolor ? {} : {color: postcolor}}>Publicado |</span>🌍<span>25 de Dezembro de 2024</span>
     </div>
   )
 }

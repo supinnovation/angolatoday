@@ -23,6 +23,10 @@ export const APP_ROUTE = {
     trend: {
       path: "/trend",
       name: "Mais vistos"
+    },
+    view: {
+      path: "/view", //view by id
+      name: "Visualização da notícia"
     }
 
   }

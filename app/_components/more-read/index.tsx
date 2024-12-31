@@ -1,4 +1,5 @@
 
+import { home_photos } from "@/app/_tests/json";
 import CardModelSimple from "../card-models/card-model-simple";
 import SimpleLegendedContainer from "../simple-legended-container";
 import styles from "./styles.module.css"
@@ -15,9 +16,9 @@ export default function MoreRead(){
     `} >
  
       {
-      Array(4).fill(1).map((e,i) =>
+     home_photos.map((e,i) =>
       <CardModelSimple 
-        
+          href={e.href}
           key={i}
           title={"Testando a apresentação de elementos"}
           description={ `

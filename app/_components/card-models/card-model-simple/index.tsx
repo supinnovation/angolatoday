@@ -5,8 +5,8 @@ import {DateLabel} from "@/app/_components/notes/note-1"
 import styles from "./styles.module.css"
 
 export default function CardModelSimple({
-  legends, image, title, description, className, legend, showdate=true
-} : { legends?:string[], image?:string, title:string, description?:string, className?:string, legend?:string, showdate?:boolean}){
+  legends, image, title, description, className, legend, showdate=true, href=""
+} : { legends?:string[], image?:string, title:string, description?:string, className?:string, legend?:string, showdate?:boolean, href?:string}){
 
   return(
     <div className={`
@@ -22,6 +22,7 @@ export default function CardModelSimple({
         legends={legends}
         alt={title}
         src={image} 
+        href={href}
       />}
       <div className={`flex flex-col gap-[10px] ${(description && image) && styles.titlearea }`}>
         <div className="flex flex-col">
@@ -35,7 +36,7 @@ export default function CardModelSimple({
           }}>
             {legend} 
           </span>
-          <Title2 limited>
+          <Title2 limited href={href}>
             {title}
           </Title2>
         </div>
