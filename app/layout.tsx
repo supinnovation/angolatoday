@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Angola TODAY - o teu jornal online ",
   description: "O teu jornal online",
   icons: {
-    icon: 'logo-light.png'
+    icon: '/logo-light.png'
   },
   authors: [
     {name: "Luis Domingos Marques", url: "https://www.linkedin.com/in/luís-marques369/"},

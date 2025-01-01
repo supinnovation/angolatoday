@@ -1,5 +1,6 @@
 import MainContainer from "@/app/_components/main-container";
 import PhotoView from "@/app/_components/photo-view";
+import PostViewArea from "@/app/_components/post-components/post-view-area";
 import { home_photos } from "@/app/_tests/json";
 
 
@@ -21,6 +22,7 @@ export default async function View({
         title={home_photos[numid].title}
         description={home_photos[numid].sub}
       />
+      <PostViewArea />
     </MainContainer>
   )
 }
