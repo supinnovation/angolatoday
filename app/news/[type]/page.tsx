@@ -2,7 +2,7 @@
 import CardGroupNewsArea from "@/app/_components/card-groups/card-group-news-area"
 import MainContainer from "@/app/_components/main-container"
 import { home_photos } from "@/app/_tests/json"
-import { Metadata } from "next"
+// import { Metadata } from "next"
 import {APP_ROUTE} from "@/app/_constants/app-route"
 import { RouteObject } from "@/app/_types/route-object"
 import MoreNews from "./_components/more-news"
