@@ -1,7 +1,7 @@
 .topmenu {
 
   position: sticky;
-  top: -85px;
+  top: calc(-1 * var(--space-top));
   z-index: 1000;
   background: var(--color-primary);
 }

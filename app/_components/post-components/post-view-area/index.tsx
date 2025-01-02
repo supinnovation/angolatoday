@@ -104,14 +104,15 @@ Soluta, nobis ipsam molestiae quas perferendis amet, ullam, sapiente magni repel
 Obcaecati deleniti optio natus velit consequatur temporibus, dolore consectetur voluptas odio corrupti possimus non soluta quas tempora enim dolores. Quod, quia! Pariatur rem facere autem cupiditate maxime fugiat cumque ad.`
 
 
-export default function PostViewArea({}){
+export default function PostViewArea({className}: {className?:string}){
 
   const text_array : string[] = (paragraphDivider(textTest))
   return (
     <div className={`
-      w-full
-      max-w-[730px]
-      m-auto
+
+        max-w-[630px]
+        ${className}
+
     `}>
       <div className={`${styles.postviewarea}`}>
        {text_array.map( (e,i) => {
@@ -139,7 +140,7 @@ export default function PostViewArea({}){
 }
 
 
-const Citation = ({text}: {text?:string}) => {
+const Citation = ({text}: {text:string}) => {
   const citation = text.replaceAll('"', '')
   return(
     <div className={styles.citation}>

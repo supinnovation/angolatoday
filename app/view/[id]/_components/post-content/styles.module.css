@@ -1,0 +1,6 @@
+
+
+.fixeds {
+  position: sticky;
+  top: var(--space-top);
+}

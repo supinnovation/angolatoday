@@ -12,7 +12,8 @@ export default function LegendContainer({
       ${styles.area}
       ${className} 
     `}>
-      <div className={styles.legend+ " " + classLegend} style={{
+      
+      <div className={styles.legend+ " mb-[36px] " + classLegend} style={{
         borderColor: legendColor
       }}>
       <span 

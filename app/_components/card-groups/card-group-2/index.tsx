@@ -24,28 +24,7 @@ export default function CardGroup2(){
          
           `
         }>
-        <div className={`
-            flex
-            flex-col
-            max-w-[275px]
-            ${styles.left}
-          `}>
-          <CardModelSimple
-            legends={['Negócios']}
-            image={home_photos[0].image}
-            title={home_photos[0].title}
-            href={home_photos[0].href}
-
-            
-          />
-           <CardModelSimple
-            legends={['Tecnologia']}
-            image={home_photos[2].image}
-            title={home_photos[2].title}
-            href={home_photos[2].href}
-            
-          />
-        </div>
+       <ContentColumn2 />
         <CardModel1 title={home_photos[1].sub} 
           image={home_photos[1].image}
           href={home_photos[1].href}
@@ -88,5 +67,34 @@ export default function CardGroup2(){
         />
       </LegendedContainer>
     </MainContainer>
+  )
+}
+
+
+export const ContentColumn2 = ({className}: {className?:string}) => {
+
+
+  return(
+    <div className={`
+      flex
+      flex-col
+      max-w-[275px]
+      ${styles.left}
+      ${className}
+    `}>
+    <CardModelSimple
+      legends={['Negócios']}
+      image={home_photos[0].image}
+      title={home_photos[0].title}
+      href={home_photos[0].href}
+    />
+     <CardModelSimple
+      legends={['Tecnologia']}
+      image={home_photos[2].image}
+      title={home_photos[2].title}
+      href={home_photos[2].href}
+      
+    />
+  </div>
   )
 }

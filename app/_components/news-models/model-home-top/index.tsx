@@ -42,17 +42,24 @@ export default function ModelHomeTop(){
       <div className={styles.spand+` 
 
         ` } >
-        <LegendContainer legend="Legenda do topo" className="flex-[1]">
-          <BasicPulbicity />
-          <div className={`
-              flex flex-col pt-[16px] ${styles.news} gap-[16px]
-            `}>
-            <CardModelSimple title = {home_photos[1].title} legend="legenda" showdate={false}/>
-            <CardModelSimple title = {home_photos[0].title} legend="legenda 2" showdate={false}/>
-          </div>
-        </LegendContainer>
+      <PublicityArea />
       </div>
       
     </MainContainer>
+  )
+}
+
+export const PublicityArea = ({className}: { className?: string}) => {
+
+  return(
+    <LegendContainer legend="Legenda do topo" className={"flex-[1] "+className}>
+    <BasicPulbicity />
+    <div className={`
+        flex flex-col pt-[16px] ${styles.news} gap-[16px]
+      `}>
+      <CardModelSimple title = {home_photos[1].title} legend="legenda" showdate={false}/>
+      <CardModelSimple title = {home_photos[0].title} legend="legenda 2" showdate={false}/>
+    </div>
+  </LegendContainer>
   )
 }

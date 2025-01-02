@@ -15,9 +15,12 @@
   --color-line: #c64c0f2c;
 
   --space-letter: 0.1em;
+  --space-top: 85px;
   --space-title-line-height: 1.05em;
   
   --border: 1px solid var(--color-line);
+
+
 
 }
 
@@ -31,7 +34,7 @@
   }
 } */
 body, html {
-  height: 100dvh;
+  min-height: 100dvh;
 }
 body {
   color: var(--text-color-paragraphy);
