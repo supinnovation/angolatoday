@@ -9,7 +9,7 @@ export default function Photo({
   return(
     <div className={"relative"}>
       <Link href={href}>
-        <Image alt={alt} src={src} className={` ${className} w-full  aspect-video`} />
+        <Image alt={alt} src={src} className={` ${className} w-full  aspect-video`} width={400} height={300} />
         <div className={`
             flex flex-row
             absolute
