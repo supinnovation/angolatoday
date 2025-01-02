@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Legend from "./_components/legend";
 import Link from "next/link"
 
@@ -8,7 +9,7 @@ export default function Photo({
   return(
     <div className={"relative"}>
       <Link href={href}>
-        <img alt={alt} src={src} className={` ${className} w-full  aspect-video`} />
+        <Image alt={alt} src={src} className={` ${className} w-full  aspect-video`} />
         <div className={`
             flex flex-row
             absolute
